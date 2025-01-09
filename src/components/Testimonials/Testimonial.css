@@ -1,0 +1,69 @@
+ .swiper {
+    width: 100% !important;
+  }
+  
+  .testimonial {
+    display: flex;
+    flex-direction: column; /* Ensures vertical stacking */
+    align-items: center;
+    gap: 15px; /* Adjust spacing between items */
+    text-align: center; /* Centers text */
+  }
+  
+  .testimonial img {
+    width: 220px; /* Set fixed width */
+    height: 300px; /* Set fixed height */
+    object-fit: cover; /* Ensures the image fits within the defined dimensions */
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    flex-shrink: 0; /* Prevents the image from shrinking */
+  }
+  
+  
+  .content {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .content h3 {
+    font-size: 35px;
+  }
+  
+  .content h3 span {
+    display: block;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+  }
+  
+  .content p {
+    padding: 20px;
+    border: 1px solid rgba(131, 131, 131, 0.2);
+    border-radius: 10px;
+    color: #555; /* Slightly darker text color for better readability */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .testimonial {
+      flex-direction: column; /* Maintains vertical stacking */
+      align-items: center; /* Ensures content stays centered */
+    }
+  
+    .content h3 {
+      font-size: 28px; /* Slightly smaller font size for smaller screens */
+    }
+  
+    .content h3 span {
+      font-size: 14px; /* Adjusts font size for better responsiveness */
+    }
+  
+    .content p {
+      font-size: 14px; /* Scales paragraph text for smaller screens */
+      padding: 15px; /* Reduces padding to maintain spacing */
+    }
+  }
+  

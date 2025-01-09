@@ -1,0 +1,119 @@
+.header_wrapper {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.swiper {
+    height: 100vh !important;
+    width: 100% !important;
+}
+
+.header_slide {
+    height: 100%;
+    width: 100%;
+    background-image: url(../../assets/hero-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+
+.header_slide::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.slide2 {
+    background-image: url(../../assets/hero-2.png);
+}
+
+.slide3 {
+    background-image: url(../../assets/hero-3.png);
+}
+
+.header_slide .content {
+    position: absolute;
+    bottom: 11%;
+    left: 15px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+}
+
+.header_slide .content small {
+    color: #fff;
+    font-size: 22px;
+    margin-left: 200px;
+
+
+}
+
+.header_slide .content h2 {
+    color: #fff;
+    font-size: 35px;
+    margin-left: 200px;
+}
+
+.header_slide .content h2 span {
+    color: #df8033;
+}
+
+.header_slide p {
+    color: #fff;
+    font-size: 20px;
+    font-family: "poppins";
+    margin-left: 200px;
+    color: #df8033;
+}
+
+.header_slide p span {
+    display: block;
+    font-weight: 600;
+    color: #fff;
+}
+
+@media screen and (max-width:768px) {
+    .header_slide .content {
+        bottom: 11%;
+        /* top: 67%; */
+    }
+
+    .header_slide .content h2 {
+        font-size: 30px;
+        margin-left: 60px;
+    }
+
+    .header_slide .content small {
+        margin-left: 60px;
+        font-size: 16px;
+    }
+
+    .header_slide p {
+        margin-left: 60px;
+        font-size: 15px;
+
+    }
+}
+
+@media screen and (max-width:500px) {
+    .header_slide .content h2 {
+        font-size: 30px;
+    }
+
+    .header_slide .content small {
+        font-size: 16px;
+    }
+
+    .header_slide p {
+        font-size: 15px;
+    }
+}
