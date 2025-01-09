@@ -12,7 +12,7 @@
   
   .testimonial img {
     width: 220px; /* Set fixed width */
-    height: 300px; /* Set fixed height */
+    height: 270px; /* Set fixed height */
     object-fit: cover; /* Ensures the image fits within the defined dimensions */
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
